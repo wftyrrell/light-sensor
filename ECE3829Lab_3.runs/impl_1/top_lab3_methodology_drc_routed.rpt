@@ -1,0 +1,97 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Thu Feb 16 14:53:53 2023
+| Host         : DESKTOP-JCRIMS0 running 64-bit major release  (build 9200)
+| Command      : report_methodology -file top_lab3_methodology_drc_routed.rpt -pb top_lab3_methodology_drc_routed.pb -rpx top_lab3_methodology_drc_routed.rpx
+| Design       : top_lab3
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 12
++-----------+------------------+------------------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                                      | Violations |
++-----------+------------------+------------------------------------------------------------------+------------+
+| TIMING-6  | Critical Warning | No common primary clock between related clocks                   | 2          |
+| TIMING-20 | Warning          | Non-clocked latch                                                | 8          |
+| TIMING-56 | Warning          | Missing logically or physically excluded clock groups constraint | 2          |
++-----------+------------------+------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_10Mhz_clk_mmcm_wiz and clk_10Mhz_clk_mmcm_wiz_1 are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_10Mhz_clk_mmcm_wiz] -to [get_clocks clk_10Mhz_clk_mmcm_wiz_1]
+Related violations: <none>
+
+TIMING-6#2 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_10Mhz_clk_mmcm_wiz_1 and clk_10Mhz_clk_mmcm_wiz are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_10Mhz_clk_mmcm_wiz_1] -to [get_clocks clk_10Mhz_clk_mmcm_wiz]
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch seven_seg_segi/an_reg[0] cannot be properly analyzed as its control pin seven_seg_segi/an_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch seven_seg_segi/an_reg[1] cannot be properly analyzed as its control pin seven_seg_segi/an_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch seven_seg_segi/an_reg[2] cannot be properly analyzed as its control pin seven_seg_segi/an_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch seven_seg_segi/an_reg[3] cannot be properly analyzed as its control pin seven_seg_segi/an_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch seven_seg_segi/disp_reg[0] cannot be properly analyzed as its control pin seven_seg_segi/disp_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch seven_seg_segi/disp_reg[1] cannot be properly analyzed as its control pin seven_seg_segi/disp_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch seven_seg_segi/disp_reg[2] cannot be properly analyzed as its control pin seven_seg_segi/disp_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch seven_seg_segi/disp_reg[3] cannot be properly analyzed as its control pin seven_seg_segi/disp_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-56#1 Warning
+Missing logically or physically excluded clock groups constraint  
+Multiple clocks are user generated or auto-derived on the source pin clock_geni/clk_mmcm_wizi/inst/mmcm_adv_inst/CLKFBOUT but are not logically or physically exclusive with respect to one another. To have the static timing analysis match the behavior in hardware, there cannot be multiple clocks generated on the same pin and when such situation occurs, the clocks should be defined as physically or logically exclusive. The list of clocks generated on the source pin is: clkfbout_clk_mmcm_wiz, clkfbout_clk_mmcm_wiz_1
+Related violations: <none>
+
+TIMING-56#2 Warning
+Missing logically or physically excluded clock groups constraint  
+Multiple clocks are user generated or auto-derived on the source pin clock_geni/clk_mmcm_wizi/inst/mmcm_adv_inst/CLKOUT0 but are not logically or physically exclusive with respect to one another. To have the static timing analysis match the behavior in hardware, there cannot be multiple clocks generated on the same pin and when such situation occurs, the clocks should be defined as physically or logically exclusive. The list of clocks generated on the source pin is: clk_10Mhz_clk_mmcm_wiz, clk_10Mhz_clk_mmcm_wiz_1
+Related violations: <none>
+
+

@@ -1,0 +1,267 @@
+
+*** Running vivado
+    with args -log top_lab3.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_lab3.tcl
+
+
+
+****** Vivado v2021.1 (64-bit)
+  **** SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+  **** IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source top_lab3.tcl -notrace
+Command: synth_design -top top_lab3 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28420
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1142.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_lab3' [C:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.srcs/sources_1/new/top_lab3.v:23]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg' [C:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.srcs/sources_1/new/seven_seg.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.srcs/sources_1/new/seven_seg.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg' (1#1) [C:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.srcs/sources_1/new/seven_seg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clock_gen' [C:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.srcs/sources_1/new/clock_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_mmcm_wiz' [C:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.runs/synth_1/.Xil/Vivado-16268-DESKTOP-JCRIMS0/realtime/clk_mmcm_wiz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_mmcm_wiz' (2#1) [C:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.runs/synth_1/.Xil/Vivado-16268-DESKTOP-JCRIMS0/realtime/clk_mmcm_wiz_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clock_gen' (3#1) [C:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.srcs/sources_1/new/clock_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'light_sensor' [C:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.srcs/sources_1/new/light_sensor.v:23]
+	Parameter TERM_COUNT bound to: 10000000 - type: integer 
+	Parameter SIZE bound to: 32 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.srcs/sources_1/new/light_sensor.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'light_sensor' (4#1) [C:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.srcs/sources_1/new/light_sensor.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'top_lab3' (5#1) [C:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.srcs/sources_1/new/top_lab3.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1142.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1142.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1142.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1142.027 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.gen/sources_1/ip/clk_mmcm_wiz/clk_mmcm_wiz/clk_mmcm_wiz_in_context.xdc] for cell 'clock_geni/clk_mmcm_wizi'
+Finished Parsing XDC File [c:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.gen/sources_1/ip/clk_mmcm_wiz/clk_mmcm_wiz/clk_mmcm_wiz_in_context.xdc] for cell 'clock_geni/clk_mmcm_wizi'
+Parsing XDC File [C:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.srcs/constrs_1/new/lab3_constraints.xdc]
+Finished Parsing XDC File [C:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.srcs/constrs_1/new/lab3_constraints.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.srcs/constrs_1/new/lab3_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_lab3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_lab3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1142.027 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1142.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1142.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1142.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.gen/sources_1/ip/clk_mmcm_wiz/clk_mmcm_wiz/clk_mmcm_wiz_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.gen/sources_1/ip/clk_mmcm_wiz/clk_mmcm_wiz/clk_mmcm_wiz_in_context.xdc, line 4).
+Applied set_property KEEP_HIERARCHY = SOFT for clock_geni/clk_mmcm_wizi. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1142.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'newstate_reg' in module 'light_sensor'
+WARNING: [Synth 8-327] inferring latch for variable 'disp_reg' [C:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.srcs/sources_1/new/seven_seg.v:66]
+WARNING: [Synth 8-327] inferring latch for variable 'an_reg' [C:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.srcs/sources_1/new/seven_seg.v:65]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   RESET |                             0001 |                               00
+                    WAIT |                             0010 |                               01
+                    READ |                             0100 |                               10
+                  iSTATE |                             1000 |                               11
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'newstate_reg' using encoding 'one-hot' in module 'light_sensor'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1142.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	  17 Input    7 Bit        Muxes := 1     
+	   4 Input    5 Bit        Muxes := 1     
+	   5 Input    4 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 5     
+	   5 Input    1 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 4     
+	   4 Input    1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:06 ; elapsed = 00:00:21 . Memory (MB): peak = 1142.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:29 . Memory (MB): peak = 1142.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:29 . Memory (MB): peak = 1142.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:30 . Memory (MB): peak = 1142.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:35 . Memory (MB): peak = 1142.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:35 . Memory (MB): peak = 1142.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:35 . Memory (MB): peak = 1142.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:36 . Memory (MB): peak = 1142.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:36 . Memory (MB): peak = 1142.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:36 . Memory (MB): peak = 1142.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_mmcm_wiz  |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |clk_mmcm_wiz |     1|
+|2     |CARRY4       |    13|
+|3     |LUT1         |     6|
+|4     |LUT2         |    24|
+|5     |LUT3         |     4|
+|6     |LUT4         |    12|
+|7     |LUT5         |    15|
+|8     |LUT6         |    23|
+|9     |FDCE         |    19|
+|10    |FDPE         |     1|
+|11    |FDRE         |    61|
+|12    |LDC          |     4|
+|13    |LDP          |     4|
+|14    |IBUF         |     2|
+|15    |OBUF         |    13|
++------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:36 . Memory (MB): peak = 1142.027 ; gain = 0.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:33 . Memory (MB): peak = 1142.027 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:36 . Memory (MB): peak = 1142.027 ; gain = 0.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1142.027 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1142.027 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  LDC => LDCE: 4 instances
+  LDP => LDPE: 4 instances
+
+Synth Design complete, checksum: 3006cd52
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:43 . Memory (MB): peak = 1142.027 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.runs/synth_1/top_lab3.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_lab3_utilization_synth.rpt -pb top_lab3_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 16 14:52:34 2023...

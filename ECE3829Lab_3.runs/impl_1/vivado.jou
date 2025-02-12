@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Thu Feb 16 14:52:50 2023
+# Process ID: 29188
+# Current directory: C:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.runs/impl_1
+# Command line: vivado.exe -log top_lab3.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top_lab3.tcl -notrace
+# Log file: C:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.runs/impl_1/top_lab3.vdi
+# Journal file: C:/Users/wftyr/ECE3829/ECE3829Lab_3/ECE3829Lab_3.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source top_lab3.tcl -notrace
